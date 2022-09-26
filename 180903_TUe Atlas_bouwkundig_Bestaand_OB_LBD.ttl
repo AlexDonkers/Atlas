@@ -3830,9 +3830,18 @@ inst:member_f4fa214e-8c07-413f-8e16-bda95010f10f
         props:isExternal_simple       true .
 
 inst:RedCentralStair
-		rdf:type						beo:Stair ;
+		rdf:type						beo:Stair , beo:Artwork ;
 		bpt:hasBaseLevel				inst:storey_3672b823-9edb-449e-97e3-3ccc911de828 ;
 		bpt:hasTopLevel					inst:storey_3672b823-9edb-449e-97e3-3ccc911ed603 .
+
+inst:MainEntranceHall
+		a								bot:Space ;
+		bot:containsElement 			inst:RedCentralStair , inst:ReceptionDesk ;
+		bot:adjacentElement				inst:window_60cad3d1-4e62-49f9-8b52-cbea7569c65e .
+
+inst:ReceptionDesk
+		a								beo:ReceptionDesk .
+		
 
 inst:stair_05bfaf7b-fdb3-4b05-8ada-cc9918d90822
         props:rebarCover_simple         "Rebar Cover Settings: Rebar Cover 1" ;
