@@ -1,0 +1,31 @@
+@prefix ofo:	<https://w3id.org/ofo#> .
+@prefix prov:	<http://www.w3.org/ns/prov#>
+
+@prefix Atlas: <https://www.github.com/AlexDonkers/Atlas#> .
+@prefix :		<https://github.com/AlexDonkers/Atlas/Occupant1#>
+
+:Occupant1
+	a							ofo:Person ;
+	ofo:wears					:Occupant1_FitbitSense ;
+	ofo:givesFeedback			:MainEntranceHall_ThermalComfort_Feedback .
+
+:MainEntranceHall_ThermalComfort_Feedback
+	a							ofo:Feedback ;
+	ofo:hasFeatureOfInterest	Atlas:MainEntranceHall ;
+	ofo:hasEvaluatedProperty	:MainEntranceHall_ThermalComfort ;
+	ofo:hasFeedbackResult		:MainEntranceHall_ThermalComfort_Feedback_State00000000001 , :MainEntranceHall_ThermalComfort_Feedback_State00000000002 , :MainEntranceHall_ThermalComfort_Feedback_State00000000003  .
+
+:MainEntranceHall_ThermalComfort_Feedback_State00000000001 
+	a							ofo:Result ;
+	prov:generatedAtTime		2022-10-05T12:00:00.000 ;
+	ofo:hasValue				"Like" .
+	
+:MainEntranceHall_ThermalComfort_Feedback_State00000000002 
+	a							ofo:Result ;
+	prov:generatedAtTime		2022-10-05T12:30:00.000 ;
+	ofo:hasValue				"Dislike" .
+	
+:MainEntranceHall_ThermalComfort_Feedback_State00000000003 
+	a							ofo:Result ;
+	prov:generatedAtTime		2022-10-05T13:00:00.000 ;
+	ofo:hasValue				"Like" .
