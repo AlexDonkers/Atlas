@@ -3839,6 +3839,18 @@ Atlas:MainEntranceHall
 		bot:containsElement 			Atlas:RedCentralStair , Atlas:ReceptionDesk ;
 		bot:adjacentElement				Atlas:window_60cad3d1-4e62-49f9-8b52-cbea7569c65e .
 
+Atlas:TempSensor_01
+		a								bop:Sensor ;
+		bop:hasResult					Atlas:TempSensor_DP ;
+		bop:observes					Atlas:MainEntranceHall .
+		
+Atlas:TempSensor_DP
+		a								bop:DataPoint ;
+		bop:isDataPointOf				Atlas:Atlas_TSDB .
+
+Atlas:Atlas_TSDB
+		a								bop:Database .
+
 Atlas:ReceptionDesk
 		a								beo:ReceptionDesk .
 		
