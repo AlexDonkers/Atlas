@@ -15,6 +15,7 @@
 @prefix mep: <http://pi.pauwel.be/voc/distributionelement#> .
 @prefix furn: <http://pi.pauwel.be/voc/furniture#> .
 @prefix bpt:<https://w3id.org/bpt#> .
+@prefix bop: <https://w3id.org/bop#> .
 
 Atlas:plate_6e9ec52b-d5d7-4d21-a499-b85d7f355f63
         rdf:type                      beo:Plate ;
